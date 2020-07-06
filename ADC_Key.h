@@ -8,19 +8,19 @@
 	(sizeof(array) / sizeof(array[0]))
 
 const int ADC_key_table[5][2] = {
-	{0x2a5, 0x2af},		//0 KEY_MIDDLE 1
-	{0x120, 0x140}, 	//1 KEY_LEFT 2
-	{0x210, 0x220}, 	//2 KEY_RIGHT 3
-	{0x280, 0x290}, 	//3 KEY_DOWN 4
-	{0x2E0, 0x2E5}  	//4 KEY_ROTATE 5
+	{0x2a5, 0x2af},		//KEY 0 ADC Value
+	{0x120, 0x140}, 	//KEY 1 ADC Value
+	{0x210, 0x220}, 	//KEY 2 ADC Value
+	{0x280, 0x290}, 	//KEY 3 ADC Value
+	{0x2E0, 0x2E5}  	//KEY 4 ADC Value
 };
 
 typedef enum {
-	KEY_MIDDLE = 0,
-	KEY_LEFT,
-	KEY_RIGHT,
-	KEY_DOWN,
-	KEY_ROTATE,
+	KEY_MIDDLE = 0,		//KEY 0
+	KEY_LEFT,		//KEY 1
+	KEY_RIGHT,		//KEY 2
+	KEY_DOWN,		//KEY 3
+	KEY_ROTATE,		//KEY 4
 	KEY_NOKEY
 } key;
 
